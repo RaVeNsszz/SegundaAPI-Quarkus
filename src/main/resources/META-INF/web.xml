@@ -1,0 +1,12 @@
+<web-app>
+<display-name>My Web Application</display-name>
+<servlet>
+<servlet-name>h2-console</servlet-name>
+<!--  org.h2.server.web.WebServlet for Quarkus 2 or earlier  -->
+<servlet-class>org.h2.server.web.JakartaWebServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>h2-console</servlet-name>
+<url-pattern>/h2/*</url-pattern>
+</servlet-mapping>
+</web-app>
